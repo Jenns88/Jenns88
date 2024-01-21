@@ -1,0 +1,92 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eee2b6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2 {
+    color: #d47c00;
+}
+
+header,
+main,
+footer {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 50px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+    background-color: #ddb503;
+    justify-content: space-between;
+}
+
+footer h3 {
+    padding: 0px 20px;
+}
+
+
+/* Movil Horizontal */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    header, main, footer {
+        width: 100%;
+        padding: 10px; 
+        font-size: 16px;
+    }
+
+    p, ul {
+        font-size: 16px; 
+    }
+}
+
+
+
+/* Tablet y PC Vertical */
+@media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+    p, ul {
+        font-size: 18px;
+    }
+}
+
+/* Tablet Horizontal y PC Horizontal */
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    header, main, footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    p, ul {
+        font-size: 20px;
+    }
+}
